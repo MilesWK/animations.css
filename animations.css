@@ -1,0 +1,84 @@
+/* Fadein */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadein 2s forwards ease-in-out;
+}
+
+/* Zoomin */
+
+@keyframes zoomin {
+  from {
+    transform: scale(0, 0)
+  }
+  to {
+    transform: scale(1, 1)
+  }
+}
+
+.zoomin {
+  transform: scale(0, 0);
+  animation: zoomin 2s forwards ease-in-out;
+}
+
+/* Spin */
+
+@keyframes flip {
+  from{transform: rotateX(0deg);}
+  to{transform: rotateX(360deg);}
+}
+
+.flip{
+  animation: flip 1s linear infinite;
+}
+
+@keyframes color {
+    0% {
+        color: red;
+    }
+
+    15% {
+        color: orange;
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    40% {
+        color: green;
+    }
+    55% {
+        color: blue;
+    }
+    70% {
+        color: purple;
+    }
+    85% {
+        color: violet;
+    }
+}
+
+.rainbow{
+  color: red;
+  animation: color 8s ease-in-out infinite;
+}
+@keyframes flipup {
+  0%{transform: rotateX(90deg);}
+  50%{transform: rotateX(-30deg);}
+  100%{transform: rotateX(0deg);}
+}
+
+.flipup{
+  transform: rotateX(90deg);
+  animation: flipup 1s 1s ease-in-out forwards;
+}
